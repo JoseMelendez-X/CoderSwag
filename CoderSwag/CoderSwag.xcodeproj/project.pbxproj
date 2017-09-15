@@ -13,6 +13,8 @@
 		59254DAA1F68E2EB00347BE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59254DA91F68E2EB00347BE9 /* Assets.xcassets */; };
 		59254DAD1F68E2EB00347BE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59254DAB1F68E2EB00347BE9 /* LaunchScreen.storyboard */; };
 		59254DBB1F68EA9500347BE9 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59254DBA1F68EA9500347BE9 /* CategoryTableViewCell.swift */; };
+		594D0F071F6A3CCB0069D1C9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594D0F061F6A3CCB0069D1C9 /* Category.swift */; };
+		59FE370E1F6C4B910065E82E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FE370D1F6C4B910065E82E /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		59254DAC1F68E2EB00347BE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59254DAE1F68E2EB00347BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59254DBA1F68EA9500347BE9 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		594D0F061F6A3CCB0069D1C9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		59FE370D1F6C4B910065E82E /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		59254DA11F68E2EB00347BE9 /* CoderSwag */ = {
 			isa = PBXGroup;
 			children = (
+				59FE370C1F6C4B810065E82E /* Services */,
 				59254DB71F68E98D00347BE9 /* Model */,
 				59254DB61F68E98700347BE9 /* Controller */,
 				59254DB51F68E97D00347BE9 /* View */,
@@ -84,6 +89,7 @@
 		59254DB71F68E98D00347BE9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				594D0F061F6A3CCB0069D1C9 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -97,6 +103,14 @@
 				59254DAE1F68E2EB00347BE9 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		59FE370C1F6C4B810065E82E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				59FE370D1F6C4B910065E82E /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +188,8 @@
 				59254DA51F68E2EB00347BE9 /* CatergoriesVC.swift in Sources */,
 				59254DA31F68E2EB00347BE9 /* AppDelegate.swift in Sources */,
 				59254DBB1F68EA9500347BE9 /* CategoryTableViewCell.swift in Sources */,
+				594D0F071F6A3CCB0069D1C9 /* Category.swift in Sources */,
+				59FE370E1F6C4B910065E82E /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GL34LYNV2E;
 				INFOPLIST_FILE = "$(SRCROOT)/CoderSwag/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JoseMelendez.CoderSwag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -328,6 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GL34LYNV2E;
 				INFOPLIST_FILE = "$(SRCROOT)/CoderSwag/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JoseMelendez.CoderSwag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
