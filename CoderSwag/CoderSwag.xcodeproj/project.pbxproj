@@ -16,6 +16,7 @@
 		594D0F071F6A3CCB0069D1C9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594D0F061F6A3CCB0069D1C9 /* Category.swift */; };
 		59D6CB701F6DB08F00E4CFA9 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D6CB6F1F6DB08F00E4CFA9 /* ProductCell.swift */; };
 		59D6CB721F6DBD2700E4CFA9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D6CB711F6DBD2700E4CFA9 /* Product.swift */; };
+		59D6CB741F6EDE8300E4CFA9 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D6CB731F6EDE8300E4CFA9 /* ProductsVC.swift */; };
 		59FE370E1F6C4B910065E82E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FE370D1F6C4B910065E82E /* DataService.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		594D0F061F6A3CCB0069D1C9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		59D6CB6F1F6DB08F00E4CFA9 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		59D6CB711F6DBD2700E4CFA9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		59D6CB731F6EDE8300E4CFA9 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 		59FE370D1F6C4B910065E82E /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				59254DA41F68E2EB00347BE9 /* CatergoriesVC.swift */,
+				59D6CB731F6EDE8300E4CFA9 /* ProductsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59D6CB741F6EDE8300E4CFA9 /* ProductsVC.swift in Sources */,
 				59254DA51F68E2EB00347BE9 /* CatergoriesVC.swift in Sources */,
 				59254DA31F68E2EB00347BE9 /* AppDelegate.swift in Sources */,
 				59254DBB1F68EA9500347BE9 /* CategoryTableViewCell.swift in Sources */,

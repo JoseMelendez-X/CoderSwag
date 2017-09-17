@@ -48,10 +48,9 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCu-YF-G4F">
-                                                    <rect key="frame" x="109.5" y="58" width="156" height="31"/>
+                                                    <rect key="frame" x="141" y="58" width="93" height="31"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="31" id="dzM-Dz-tht"/>
-                                                        <constraint firstAttribute="width" constant="156" id="wqt-pa-6pO"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -80,6 +79,7 @@
                             <constraint firstItem="5za-J2-VLa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="91p-Rc-JA1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5za-J2-VLa" secondAttribute="bottom" id="K6Q-2Q-wSY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5za-J2-VLa" secondAttribute="trailing" id="OU3-hC-Hat"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ujw-0n-ouc" secondAttribute="trailing" constant="20" symbolic="YES" id="g7h-aT-Ras"/>
                             <constraint firstItem="ujw-0n-ouc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gPo-gx-Bi2"/>
                             <constraint firstItem="ujw-0n-ouc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="gvH-Kd-dSD"/>
                             <constraint firstItem="5za-J2-VLa" firstAttribute="top" secondItem="ujw-0n-ouc" secondAttribute="bottom" constant="16" id="yEG-OP-77r"/>
@@ -89,17 +89,17 @@
                     <navigationItem key="navigationItem" title="Coder Swag" id="jn3-Aj-Tf7"/>
                     <connections>
                         <outlet property="categoryTable" destination="5za-J2-VLa" id="F5J-Od-I0c"/>
-                        <segue destination="ypM-3A-ABQ" kind="show" id="nK6-sU-8JV"/>
+                        <segue destination="ypM-3A-ABQ" kind="show" identifier="showProductsVC" id="nK6-sU-8JV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="372" y="32.833583208395808"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="LKF-BZ-y3o">
             <objects>
-                <viewController id="ypM-3A-ABQ" sceneMemberID="viewController">
+                <viewController id="ypM-3A-ABQ" customClass="ProductsVC" customModule="CoderSwag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jn3-5r-R5a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,7 +124,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Fgv-vC-xAX" customClass="ProductCell" customModule="CoderSwag" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="Fgv-vC-xAX" customClass="ProductCell" customModule="CoderSwag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="175" height="263"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -190,6 +190,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FrS-nm-P1X"/>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="xvv-C8-URU" id="m8D-pN-cgF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JfC-8h-DoI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
